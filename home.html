@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna</title>
+
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="CSS/ap.css">
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+        #head {
+            grid-area: s1;
+        }
+
+        #left {
+            grid-area: l1;
+            padding: 20px;
+        }
+
+        #right {
+            grid-area: r1;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .about {
+            display: grid;
+            grid-template-areas: "l1 l1 r1 r1";
+        }
+
+        .events {
+            display: grid;
+            grid-template-areas: "s1 s1" "l1 r1";
+        }
+
+        #teamcolinner-0, #teamcolinner-1, #teamcolinner-2 {
+            position: relative;
+            border: 1px dashed #ddd;
+            height: 240px;
+            background: #fff;
+            z-index: 9;
+        }
+
+        .teamcol {
+            padding: 15px;
+            height: 244px;
+            background: #fff;
+            border-radius: 10px;
+            position: relative;
+            transition: transform 1s ease-in-out;
+        }
+
+        .footer a{
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <section class="bg">
+        <nav id="navbar">
+            <div id="logo">
+                <p>Luna</p>
+            </div>
+            <div class="navops">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="events.html">Events</a>
+                <a href="artist_profile.html">Artists</a>
+                <a href="news.html">News</a>
+                <a href="shop.html">Shop</a>
+                <a href="submit.html">Art Submission</a>
+                <a href="gal.html">Gallery</a>
+                <a href="login.html">Login</a>
+            </div>
+        </nav>
+        <hr>
+        <div class="centered">
+            <pre>W E L C O M E</pre>
+        </div>
+    </section>
+    <svg class="arrows">
+        <a href="#arr">
+            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+        </a>
+        <a href="#arr">
+            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+        </a>
+        <a href="#arr">
+            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+        </a>
+    </svg>
+
+    <!-- About -->
+    <section class="about" style="text-align: center; margin: 40px 0px; height: max-content;">
+        <div id="left">
+            <p style="font-size: large;">
+                Luna Art Gallery is a radiant sanctuary where creativity takes center stage. Nestled in the heart of the city, Luna beckons art enthusiasts and connoisseurs alike to embark on a captivating journey through the world of contemporary and classic art. Its pristine white walls serve as a canvas for a diverse collection of paintings, sculptures, and other forms of artistic expression, each piece a testament to the boundless depths of human imagination. Luna is more than just an art gallery; it's a haven where artists' visions come to life, a place where visitors can immerse themselves in the profound stories woven into every stroke of a brush or chisel of a sculptor's hand. With each visit, Luna Art Gallery invites you to explore, connect, and be inspired by the endless tapestry of creativity that graces its walls. It's a destination where the ordinary transforms into the extraordinary, making art not just an experience but a profound encounter with the soul of human expression.
+            </p><br><br><br>
+            <button id="gallery" onclick="document.location.replace('about.html')">Know More About Us</button>
+        </div>
+        <div id="right">
+            <img src="assets/i1.png" alt="" height="300vh">
+        </div>
+    </section>
+
+    <!-- Art Carousel -->
+    <section style="text-align: center; margin: 40px 0px;">
+        <div class="subheading" role="heading" aria-level="2" id="head">
+            <span class="current">Gallery</span>
+        </div>
+        <section class="slideshow" id="arr">
+            <div class="container">
+                <div class="carousel">
+                    <div class="carousel__face"></div>
+                    <div class="carousel__face"></div>
+                    <div class="carousel__face"></div>
+                    <div class="carousel__face"></div>
+                    <div class="carousel__face"></div>
+                    <div class="carousel__face"></div>
+                    <div class="carousel__face"></div>
+                    <div class="carousel__face"></div>
+                    <div class="carousel__face"></div>
+                </div>
+            </div>
+        </section>
+        <button id="gallery" onclick="document.location.replace('gal.html')">View Gallery</button>
+    </section>
+
+    <!-- Events -->
+    <section class="events" style="text-align: center; margin: 40px 0px; height: max-content;">
+        <div class="subheading" role="heading" aria-level="2" id="head">
+            <span class="current">Current Events</span>
+        </div>
+        <div id="left">
+            <img src="assets/i14.png" alt="" height="300vh">
+        </div>
+        <div id="right">
+            <h1>PORTAL</h1>
+            <h3>LONDON <br>11 - 30 September 2023</h3>
+            <p style="font-size: large;">
+                with work by John Abell, Peter Burns, Plum Cloutman, Freya Douglas Morris, Fiona Finnegan, Jen Wink
+                Hays, Charlotte Keates, Ebba Grahn, So Phie Lourdes Knight, Sophie Milner, Chris Oh, James Owens, Paige
+                Perkins, Elisabeth Perrault, Heidrun Rathgeb, Anna Rocke, rocki swiderski, Ilona Szalay, Thompson, Peter
+                Carrick, Kate Walters,... <a href="https://www.arushagallery.com/exhibitions/160-portal-london/works/"
+                    target="_blank">Read More</a>
+                <br><br><br>
+                <button id="gallery" onclick="document.location.replace('about.html')">Know More About Events</button>
+            </p>
+        </div>
+    </section>
+
+    <!-- About Artist -->
+    <section style="text-align: center; margin: 40px 0px;">
+        <div class="subheading" role="heading" aria-level="2" id="head">
+            <span class="current">Artists</span>
+        </div>
+        <div class="artist_card" style="margin: 40px 40px;">
+            <div class="teamGrid">
+                <div class="colmun">
+                    <div class="teamcol">
+                        <div id="teamcolinner-0">
+                            <div class="avatar"><img src="assets/Vincent van Gogh.jpg" alt="Member"></div>
+                            <div class="member-name">Vincet Van Gogh</div>
+                            <div class="member-info">Vincent Willem van Gogh was a Dutch Post-Impressionist painter who
+                                is among the most famous and influential figures in the history of Western art.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="colmun">
+                    <div class="teamcol">
+                        <div id="teamcolinner-1">
+                            <div class="avatar"><img src="assets/Pablo Picasso.jpg" alt="Member"></div>
+                            <div class="member-name">Pablo Picasso</div>
+                            <div class="member-info">Pablo Ruiz Picasso was a Spanish painter, sculptor, paintmaker,
+                                ceramicist and theatre designer and was one of the most influential artists of the 20th
+                                century.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="colmun">
+                    <div class="teamcol">
+                        <div id="teamcolinner-2">
+                            <div class="avatar"><img src="assets/leonardo do vinci.jpeg" alt="Member"></div>
+                            <div class="member-name">Leonardo da Vinci</div>
+                            <div class="member-info">Leonardo di ser Piero da Vinci was an Italian polymath of the High
+                                Renaissance who was active as a painter, draughtsman, engineer, scientist, theorist,
+                                sculptor, and architect.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br><br><br>
+        <button id="gallery" onclick="document.location.replace('artist_profile.html')">Artist Profile</button>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer" style="color: white;">
+        <footer>
+            <div class="f1">
+            </div>
+
+            <div class="f1">
+            </div>
+
+            <div class="f1">
+            </div>
+            
+            <div class="f1">
+                <a href="faq.html">FAQ</a>
+            </div>
+        </footer>
+        <div id="copyright">
+            &copy; 2023 Pallette. All Rights Reserved.
+        </div>
+    </section>
+</body>
+
+</html>
